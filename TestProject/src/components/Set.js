@@ -3,17 +3,25 @@ import { Text, View } from 'react-native';
 import ListItem from './ListItem';
 import SetStyles from './SetStyles';
 
-const Set = (props) => {
+const Set = ({ set }) => {
+  const { runeViewStyle, keyruneStyle, textViewStyle, titleStyle,
+    iconViewStyle, iconStyle, textStyle } = SetStyles;
+
+  const { name, id } = set;
+
   return (
     <ListItem>
-      <View style={SetStyles.itemStyle}>
-        <Text style={SetStyles.keyruneStyle}></Text>
+      <View style={runeViewStyle}>
+        <Text style={keyruneStyle}></Text>
       </View>
-      <View>
-        <Text style={SetStyles.testStyle}>{props.set.name}</Text>
-        <Text>{props.set.name}</Text>
-        <View>
-          <Text>{props.set.name}</Text>
+      <View style={textViewStyle}>
+        <Text style={titleStyle}>{name}</Text>
+        <Text>{id}</Text>
+        <View style={iconViewStyle}>
+          <Text style={iconStyle}></Text>
+          <Text style={textStyle}>{name}</Text>
+          <Text style={iconStyle}></Text>
+          <Text style={textStyle}>{name}</Text>
         </View>
       </View>
     </ListItem>

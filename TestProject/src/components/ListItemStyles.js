@@ -7,8 +7,7 @@ const styles = {
     padding: 5,
     paddingLeft: 20,
     paddingRight: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between'
+    flexDirection: 'row'
   }
 };
 

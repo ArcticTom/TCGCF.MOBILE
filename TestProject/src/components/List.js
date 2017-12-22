@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import ListStyles from './ListStyles';
 import Set from './Set';
@@ -29,9 +29,9 @@ class List extends Component {
 
   render() {
     return (
-      <View style={ListStyles.listStyle} >
+      <ScrollView style={ListStyles.listStyle} >
       {this.renderData()}
-      </View>
+      </ScrollView>
     );
   }
 }
