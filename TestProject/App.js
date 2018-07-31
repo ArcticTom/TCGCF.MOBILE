@@ -10,8 +10,8 @@ export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-      <Header headerText={'MAGIC: THE GATHERING'} headerImg={'http://cartamundi.com/wp-content/uploads/2016/01/iso800-Cartamundi-november-2015-2970-1024x683.jpg'} />
-      <List url={'https://api.deckbrew.com/mtg/sets'} type={'set'} />
+      <Header headerText={'MAGIC: THE GATHERING'} headerImg={'http://1.bp.blogspot.com/-fCsQQ7eJs6w/TiQbOcGhjzI/AAAAAAAAF2A/VYHhQG-c3mk/s1600/IMG_0266.JPG'} />
+      <List url={'https://mtgjson.com/json/SetList.json'} type={'set'} />
       </View>
     );
   }

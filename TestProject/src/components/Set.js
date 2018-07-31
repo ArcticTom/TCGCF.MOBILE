@@ -7,16 +7,16 @@ const Set = ({ set }) => {
   const { runeViewStyle, keyruneStyle, textViewStyle, titleStyle,
     iconViewStyle, iconStyle, textStyle } = SetStyles;
 
-  const { name, id } = set;
+  const { name, code } = set;
 
   return (
-    <ListItem>
+    <ListItem onPress={() => console.log('test')}>
       <View style={runeViewStyle}>
         <Text style={keyruneStyle}></Text>
       </View>
       <View style={textViewStyle}>
         <Text style={titleStyle}>{name}</Text>
-        <Text>{id}</Text>
+        <Text>{code}</Text>
         <View style={iconViewStyle}>
           <Text style={iconStyle}></Text>
           <Text style={textStyle}>{name}</Text>
